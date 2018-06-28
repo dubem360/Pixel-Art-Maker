@@ -1,5 +1,5 @@
 let makeGrid = function() {
-// sets height and width of the pixer maker
+// sets the grid height and width
 let gridHeight, gridWidth,canvas,cell, rows;
 
 gridHeight = $('#input-height').val();
