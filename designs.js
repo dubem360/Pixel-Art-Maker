@@ -21,7 +21,11 @@ cell = canvas.find('td');
 cell.click(function(){
     let color;
     color = $('#color-picker').val();
-    $(this).css('background-color', color);
+    if($(this).attr('style')){
+        $(this).removeAttr('style');
+    }else{
+        $(this).attr('style','background-color:' + color);
+    }
 });
 
 }
